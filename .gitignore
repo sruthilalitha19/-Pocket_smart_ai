@@ -1,0 +1,53 @@
+# ---------- Secrets ----------
+# .env holds real API keys and SECRET_KEY. Copy .env.example to .env instead.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.venv-mcp/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- App data ----------
+# SQLite database and user uploads are runtime state, not source.
+*.db
+*.sqlite
+*.sqlite3
+static/uploads/*
+!static/uploads/.gitkeep
+
+# ---------- Test output ----------
+# Regenerate with tests/browser_walkthrough.py
+screenshots/
+
+# ---------- Design source material ----------
+# Local scratch from extracting the DOCX; not needed to run the app.
+_design_extract/
+
+# ---------- Editors / OS ----------
+.vscode/*
+!.vscode/mcp.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
